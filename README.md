@@ -16,18 +16,18 @@ Menu:
 ![image](https://user-images.githubusercontent.com/66090923/112205154-4708b980-8bf3-11eb-9694-319d71049f09.png)
 
 current features:
-Mass create text channels
-Mass create voice channels
-Mass create categories
-Mass create roles
-Delete all channels and categories
-Delete all roles
-Nickname all members
-Ban all members
-Mass ping
-Kick all members
-Spammer
-Webhook spammer/deleter
+Mass create text channels,
+Mass create voice channels,
+Mass create categories,
+Mass create roles,
+Delete all channels and categories,
+Delete all roles,
+Nickname all members,
+Ban all members,
+Mass ping,
+Kick all members,
+Spammer,
+Webhook spammer/deleter.
 
 
 
