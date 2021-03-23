@@ -31,4 +31,4 @@ Webhook spammer/deleter.
 
 
 
-add me on discord if u want !¿ Weeb ¿!#8607
+add me on discord for suggestions/help/idc : !¿ Weeb ¿!#8607
