@@ -57,7 +57,8 @@ menu = f"""
 {Fore.RED}[11] = Spammer.
 {Fore.WHITE}[12] = Get bot token and invite.
 {Fore.RED}[13] = Webhook spammer.
-{Fore.WHITE}[14] = Webhook deleter."""
+{Fore.WHITE}[14] = Webhook deleter.
+{Fore.RED}[15] = List guilds bot is in."""
 
 
 @bot.event
@@ -83,8 +84,8 @@ async def on_ready():
 
         if option == "1":
             guild = await bot.fetch_guild(guildid)
-            amount = int(input("[!] Number of text channels to make?\n[>] "))
-            name = input("[!] Name of channels to make? Type RANDOM for random character names!\n[>] ")
+            amount = int(input("[!] Number of text channels to make?\n [>]"))
+            name = input("[!] Name of channels to make? Type RANDOM for random character names!\n [>] ")
             random = name.upper()
             for i in range (amount):   
                 if random == "RANDOM":
@@ -104,8 +105,8 @@ async def on_ready():
 
         elif option == "2":
             guild = await bot.fetch_guild(guildid)
-            amount = int(input("[!] Number of voice channels to make?\n[>] "))
-            name = input("[!] Name of channels to make? Type RANDOM for random character names!\n[>] ")
+            amount = int(input("[!] Number of voice channels to make?\n [>] "))
+            name = input("[!] Name of channels to make? Type RANDOM for random character names!\n [>] ")
             random = name.upper()
             for i in range (amount):  
                 if random == "RANDOM":
@@ -125,8 +126,8 @@ async def on_ready():
         elif option == "3":
 
             guild = await bot.fetch_guild(guildid)
-            amount = int(input("[!] Number of categories to make?\n[>] "))
-            name = input("[!] Name of categories to make? Type RANDOM for random character names!\n[>] ")
+            amount = int(input("[!] Number of categories to make?\n [>] "))
+            name = input("[!] Name of categories to make? Type RANDOM for random character names!\n [>] ")
             random = name.upper()
             for i in range (amount):   
                 if random == "RANDOM":
@@ -145,8 +146,8 @@ async def on_ready():
 
         elif option == "4":
             guild = await bot.fetch_guild(guildid)
-            amount = int(input("[!] Number of roles to make?\n[>] "))
-            name = input("[!] Name of roles to make? Type RANDOM for random character names!\n[>] ")
+            amount = int(input("[!] Number of roles to make?\n [>] "))
+            name = input("[!] Name of roles to make? Type RANDOM for random character names!\n [>] ")
             await bot.change_presence(activity=discord.Game('[!] Creating Roles [!]'))
             random = name.upper()
             colorcount = "red"
@@ -213,7 +214,7 @@ async def on_ready():
 
         elif option == "7":
             count = int(0)
-            nick = input("[!] Name of nicknames to change? Type RANDOM for random character names!\n[>] ")
+            nick = input("[!] Name of nicknames to change? Type RANDOM for random character names!\n [>] ")
             random = nick.upper()   
             for guild in bot.guilds:
                 if guild.id == idd:
@@ -259,7 +260,7 @@ async def on_ready():
 
         elif option == "9":
             count = int(0)
-            messageee = input("After the @everyone, what should I say?\n[>] ")
+            messageee = input("[!] After the @everyone, what should I say?\n [>] ")
             for guild in bot.guilds:
                 if guild.id == idd:
                     while True:
@@ -303,7 +304,7 @@ async def on_ready():
 
         elif option == "11":
             count = int(0)
-            messageee = input("Input the message to spam:\n[>] ")
+            messageee = input("[!] Input the message to spam:\n [>] ")
             for guild in bot.guilds:
                 if guild.id == idd:
                     while True:
@@ -329,7 +330,7 @@ async def on_ready():
             count = int(0)
             print(f"[!] Invite: https://discord.com/api/oauth2/authorize?client_id={abc}&permissions=8&scope=bot")
             print(f"[!] Bot token: {bottoken}")
-            input(f"[>]") 
+            input(f"  [>]") 
 
 
         elif option == "13":
@@ -339,8 +340,8 @@ async def on_ready():
             minute = str(currentDT.minute)
             second = str(currentDT.second)
             msg = input(f"[!] Input message to spam:\n [>] ")
-            webhookurl = Webhook(input(f"[!] Input webhook:\n [>] "))
-            delay = int(input(f"[!] Input delay between messages:\n [>] "))
+            webhookurl = Webhook(input(f"[!] Input webhook:\n  [>] "))
+            delay = int(input(f"[!] Input delay between messages:\n   [>] "))
             await bot.change_presence(activity=discord.Game('[!] Spamming Webhook [!]'))
             while True:
                 time.sleep(delay)
@@ -361,6 +362,18 @@ async def on_ready():
             print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.WHITE} Deleted webhook.")
             time.sleep(3)
             await bot.change_presence(activity=discord.Game('Idle...'))
+
+        elif option == "15":
+            count = int(0)
+            currentDT = datetime.datetime.now()
+            hour = str(currentDT.hour)
+            minute = str(currentDT.minute)
+            second = str(currentDT.second)
+            async for guild in bot.fetch_guilds(limit=150):
+                print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.WHITE} Guild name: {guild.name}")
+                print(f"{Fore.RED}[{Fore.WHITE}{hour}:{minute}:{second}{Fore.RED}]{Fore.WHITE} Guild id: {guild.id}")
+                input(" [>] ")
+
 
         else:
             print(f"{Fore.RED}[  {Fore.WHITE}  -  {Fore.RED} ] {Fore.WHITE} Invalid Input {Fore.RED}:{Fore.WHITE} {option} ")
