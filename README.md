@@ -1,3 +1,5 @@
+add me on discord for suggestions/help/idc : !¿ Weeb ¿!#8607
+
 !!! MAKE SURE SERVER MEMBERS INTENT IS ENABLED IF NOT THE BOT WILL NOT WORK
 
 HOW TO ENABLE SERVER MEMBERS INTENT:
