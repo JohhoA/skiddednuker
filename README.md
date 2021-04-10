@@ -1,4 +1,4 @@
-add me on discord for suggestions/help/idc : !¿ Weeb ¿!#8607
+add me on discord for suggestions/help/idc : Weeb#8607
 
 !!! MAKE SURE SERVER MEMBERS INTENT IS ENABLED IF NOT THE BOT WILL NOT WORK
 
@@ -34,4 +34,4 @@ Get guilds bot is in.
 
 
 
-add me on discord for suggestions/help/idc : !¿ Weeb ¿!#8607
+add me on discord for suggestions/help/idc : Weeb#8607
