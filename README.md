@@ -34,4 +34,4 @@ Get guilds bot is in.
 
 
 
-add me on discord for suggestions/help/idc : Weeb#8607
+add me on discord for suggestions/help/idc : Weeb#7777
